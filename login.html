@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lockinn</title>
+    <link href = "login.css" rel = "stylesheet">
+</head>
+<body>
+    <div class = "header">
+    <img src = "image.png" , alt="IIT Dholakpur", width="200" height="200"s >
+    <div class = "welcome-text">
+    <h3>Welcome to our <i>Prestigeous</i> Login page</h3>
+    </div>
+    </div>
+    <hr>
+    <h1>Uni library </h1>
+    
+    <p>Log in to your account</p>
+    <br><br>
+    <form action = "libsys.html">
+        <label for="Registration Number">Registration Number:</label>
+        <br><br>
+        <br><br>
+        <input type="tel" id="Registration Number" name="Registration Number" required placeholder="Enter your Registration Number" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <br><br>
+        <br><br>
+        <input type="password" id="password" name="password"  placeholder="Enter your Password" required>
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

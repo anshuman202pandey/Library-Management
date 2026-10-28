@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.welcome-text {
+  text-align: center;
+}
+
+.welcome-text h3 {
+  margin: 5px;
+  color: black;
+  font-size: 28px;
+}
+
+.welcome-text i {
+  font-size: 1.2em;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+body > p {
+  font-size: 18px;
+}
+
+img {
+  display: block;
+}

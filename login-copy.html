@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI Library Login</title>
+    <link rel="stylesheet" href="login-copy.css">
+</head>
+<body>
+    <div class="background-image">
+    <header class="header">
+        <img src="image.png" alt="IIT Dholakpur" width="180" height="180">
+        <div class="welcome-text">
+            <h3>Welcome to our <i>Prestigious</i> Login page</h3>
+        </div>
+    </div>
+    </header>
+
+    <main class="login-area">
+        <section class="login-card" aria-labelledby="login-title">
+            <h1 id="login-title">UNI Library</h1>
+            <p class="login-subtitle">Log in to your account</p>
+
+            <form action="libsys.html">
+                <label for="registration-number">Registration Number:</label>
+                <input
+                    type="tel"
+                    id="registration-number"
+                    name="Registration Number"
+                    required
+                    placeholder="Enter your Registration Number"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
+                >
+
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    placeholder="Enter your Password"
+                >
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
