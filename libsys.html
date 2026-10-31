@@ -7,20 +7,55 @@
     <link rel = "stylesheet" href = libsys.css>
 </head>
 <body>
-    <nav>
-        <h1>Campus Library</h1>
+    <nav class="Navigation">
+        <h1> Campus Library </h1>
         <h1>My Reservations</h1>
         <form action = "login-copy.html">
-        <button type="submit">Log out</button> 
-    
-    
-    </form>
+        <button id="Logout" type="submit">Log out</button> 
+        </form>
+
     </nav>
-    <h2>Search Books</h2>
+    <a href="#search"><h2>Search Books</h2></a>
     <div class = "search-bar">
         <label for="search"></label>
+        
         <input type="text" id="search" name="search" placeholder="Search by title, author, or ISBN">
-        <button id="search-button" type="submit">Browse. . .</button>
+        <button id="search-button" type="submit"><img src = "18222125.png" alt ="search" height="40px"></button>
+    </div>
+   
+    
+    
+
+   
+
+    <nav class ="Filters">
+        <p class="para">Department:</p>
+        <button class="filter-button">All</button>
+        <button class="filter-button">Mathematics</button>
+        <button class="filter-button">Python</button>
+        <button class="filter-button">C++</button>
+        <button class="filter-button">Java</button>
+        <button class="filter-button">HTML</button>
+        <button class="filter-button">Full Stack</button>
+        <button class="filter-button">Electical</button>
+        
+        
+        
+    </nav>
+    
+    <nav class ="Filters">
+        <p class="para">Status:</p>
+        <button class ="filter-button">All</button>
+        <button class ="filter-button">Available on shelf</button>
+        <button class ="filter-button">Checked out</button>
+    </nav>
+    <br>
+    <div class="books">
+        <div class="description">
+
+            
+        </div>
     </div>
 </body>
 </html>
+

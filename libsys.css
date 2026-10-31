@@ -1,4 +1,11 @@
-nav {
+body{ background-color: white;
+
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.Navigation {
     color: rgb(255, 253, 253);
     display: flex;
     justify-content:space-between;
@@ -9,26 +16,51 @@ nav {
     border-radius: 10px;
 }
 
-
-h2 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    margin-top: 20px;
+.Navigation h1:hover{
+    background-color: rgb(1, 1, 1);
 }
 
-/* .search-bar {
-     flex :1;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    padding: 10px;
-} */
+
+h2 {
+    margin-left: 35px;
+    color: rgb(55, 54, 54);
+    font-size: 24px;
+   
+}
+
+h2:hover{
+    width: 50%;
+    color:black;
+    background-color: white;
+    border: 1px;
+    border-color: gold;
+    border-radius: 22px;
+}
+
+nav #Logout { color : rgb(255, 253, 253);
+    background-color: #8b4cd8;
+    border: 1px;
+    border-color:black;
+    height: 54px;
+    padding: 15px;
+    width: auto;
+    border-radius: 22px;
+
+}
+
+
+nav #Logout:hover{
+    background-color: #a477df;
+    color:rgb(33, 31, 31);
+}
+
 
 .search-bar {
     display: flex;
     align-items: center;
-    flex: 1;
+    margin-left: 20px;
+    
+    margin-right: 200px;
     gap: 10px;
     border-radius: 22px;
 }
@@ -40,16 +72,56 @@ h2 {
     border-radius: 22px;
 }
 
-#search-button {
+ #search-button {
     color: rgb(255, 253, 253);
-    background-color: rgb(85, 49, 136);
+    background-color: rgb(253, 252, 255);
     border-radius: 18px;
-    padding: 10px 20px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
 }
 
 
-/* #search-button {
-    color: rgb(255, 253, 253);
-    background-color: rgb(85, 49, 136);
-    border-radius: 18px;
-} */
+
+#search-button:hover {
+    transform:translateY(-3px)
+}
+
+
+
+
+
+
+.Filters{
+    margin-top: 10px;
+    margin-left: 30px;
+    
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;   /* buttons move to next line if needed */
+}
+
+.Filters .para{
+    
+    color:#94A3B8;
+    
+
+}   
+.Filters .filter-button{
+    background:#D8C5EF;
+    color:#504C4C;
+    border:1px solid #B69AD8;
+    border-radius:22px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.Filters .filter-button:hover {
+    background-color: rgba(85, 49, 136, 0.74);
+    color: white;
+    border-color: gold;
+    transform:translateY(5px);
+}
+
