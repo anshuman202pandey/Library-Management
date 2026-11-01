@@ -111,7 +111,7 @@ nav #Logout:hover{
 }   
 .Filters .filter-button{
     background:#D8C5EF;
-    color:#504C4C;
+    color:#4c4d50;
     border:1px solid #B69AD8;
     border-radius:22px;
     padding:10px 20px;
@@ -124,4 +124,66 @@ nav #Logout:hover{
     border-color: gold;
     transform:translateY(5px);
 }
+
+
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(214, 202, 217);
+       
+}
+
+.cards .books {
+    margin-top: 50px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    padding: 5px 10px;
+    
+    width: 320px;
+    
+
+    background-color:rgb(179, 154, 217);
+    border: 1px solid #565252;
+    border-radius: 30px;
+}
+
+.cards .books .logo {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cards .books .logo img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.cards .books .description {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cards .books .description h4,
+.cards .books .description p {
+    margin: 5px;
+}
+
+
+.cards .availability li{
+    margin-top: 10px;
+    background-color:#D1FAE5;
+    color: #166534;
+    border-radius: 22px;
+    padding: 5px 10px;
+   
+}
+   
 
