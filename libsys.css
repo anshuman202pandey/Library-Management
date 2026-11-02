@@ -15,9 +15,21 @@ a {
     background-color:rgb(85, 49, 136);
     border-radius: 10px;
 }
+.Navigation #reservation{
+    color : rgb(255, 253, 253);
+    background-color: #8b4cd8;
+    padding: 15px;
+    border: 1px;
+    border-color:black;
+    height: 54px;
+    width: auto;
+    border-radius: 22px;
+}
+.Navigation #reservation:hover{
+    background-color: #a477df;
+    color:rgb(33, 31, 31);
+    cursor: pointer;
 
-.Navigation h1:hover{
-    background-color: rgb(1, 1, 1);
 }
 
 
@@ -52,6 +64,7 @@ nav #Logout { color : rgb(255, 253, 253);
 nav #Logout:hover{
     background-color: #a477df;
     color:rgb(33, 31, 31);
+    cursor: pointer;
 }
 
 
@@ -87,11 +100,6 @@ nav #Logout:hover{
     transform:translateY(-3px)
 }
 
-
-
-
-
-
 .Filters{
     margin-top: 10px;
     margin-left: 30px;
@@ -126,29 +134,30 @@ nav #Logout:hover{
 }
 
 
-.cards{
-    display: flex;
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
     background-color: rgb(214, 202, 217);
-       
+    padding: 15px;
 }
-
 .cards .books {
-    margin-top: 50px;
-
+    margin-top: 20px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     
-    padding: 5px 10px;
-    
-    width: 320px;
-    
 
-    background-color:rgb(179, 154, 217);
+    padding: 10px;
+    width: Fit-content;
+   
+
+    background-color: rgb(179, 154, 217);
     border: 1px solid #565252;
     border-radius: 30px;
+    
 }
 
 .cards .books .logo {
@@ -175,15 +184,36 @@ nav #Logout:hover{
 .cards .books .description p {
     margin: 5px;
 }
+.cards .books .description h5,
+.cards .books .description p {
+    margin: 5px;
+}
 
 
 .cards .availability li{
     margin-top: 10px;
+    width: fit-content;
     background-color:#D1FAE5;
     color: #166534;
     border-radius: 22px;
     padding: 5px 10px;
    
 }
+
+.cards .checkout li{
+    width: fit-content;
+    margin-top: 10px;
+    background-color: #FEE2E2;
+    color: #991B1B;
+    border-radius: 22px;
+    padding: 5px 10px;
+   
+}
    
 
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #777;
+    font-size: 13px;
+}
